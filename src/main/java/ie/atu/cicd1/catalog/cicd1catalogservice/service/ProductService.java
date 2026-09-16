@@ -1,4 +1,4 @@
-package service;
+package ie.atu.cicd1.catalog.cicd1catalogservice.service;
 
 import ie.atu.cicd1.catalog.cicd1catalogservice.model.Product;
 import org.springframework.stereotype.Service;
