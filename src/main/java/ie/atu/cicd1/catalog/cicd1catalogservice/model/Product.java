@@ -14,6 +14,10 @@ public class Product {
     private String name;
     private BigDecimal price;
 
+    @ManyToOne
+    @JoinColumn(name = "category_id")
+    private Category category;
+
     public Product() {}
 
     public Product(Long id, String name, BigDecimal price) {
@@ -30,4 +34,9 @@ public class Product {
 
     public BigDecimal getPrice() { return price; }
     public void setPrice(BigDecimal price) { this.price = price; }
+
+    public Category getCategory() { return category; }
+    public void setCategory(Category category) {
+        this.category = category;
+    }
 }

@@ -1,10 +1,15 @@
-This manages the product catalog 
+This lab does manage the product catalog 
 The port is 8081
-End points are GET /api/products and POST /api/products
-This service stores products in the List<Product>
+End points are the GET /api/products and the POST /api/products
+This service stores any product in the List<Product>
 
-## SQL and Normalisation Lab
+db<>fiddle link: https://dbfiddle.uk/Oqn3hZhu
 
-Final db<>fiddle session: https://dbfiddle.uk/Oqn3hZhu
+Lab 5
 
-The fiddle contains the completed SQL queries and the written answers as SQL comments.
+Product has a link to Category 
+
+so now POST /products needs an existing categoryId:
+
+If categoryId isn't there it just wont make a product
+
